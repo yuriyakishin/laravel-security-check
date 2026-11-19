@@ -33,10 +33,10 @@ The certificate is read even when browsers don't trust it, so the report can exp
 ## Installation
 
 ```bash
-composer require yu-laravel/laravel-security-check
+composer require yu-laravel/security-check
 ```
 
-This also installs [`yu-laravel/laravel-web-tools-core`](https://github.com/yuriyakishin/laravel-web-tools-core). Both service providers are discovered automatically.
+This also installs [`yu-laravel/web-tools-core`](https://github.com/yuriyakishin/laravel-web-tools-core). Both service providers are discovered automatically.
 
 ## Usage
 
@@ -49,8 +49,8 @@ Put the component on a page whose layout includes `@livewireStyles` and `@livewi
 Import the styles into your CSS build:
 
 ```css
-@import "../../vendor/yu-laravel/laravel-web-tools-core/resources/css/web-tools-core.css";
-@import "../../vendor/yu-laravel/laravel-security-check/resources/css/security-check.css";
+@import "../../vendor/yu-laravel/web-tools-core/resources/css/web-tools-core.css";
+@import "../../vendor/yu-laravel/security-check/resources/css/security-check.css";
 ```
 
 To match your site's colours and fonts, override the `--wt-*` variables (see [Web Tools Core](https://github.com/yuriyakishin/laravel-web-tools-core#styles)).

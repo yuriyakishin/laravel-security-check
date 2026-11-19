@@ -1,5 +1,5 @@
 {
-    "name": "yu-laravel/laravel-security-check",
+    "name": "yu-laravel/security-check",
     "description": "Laravel Livewire tool that checks a site's SSL certificate, HTTPS redirect and security headers.",
     "type": "library",
     "keywords": [
@@ -22,7 +22,7 @@
         "php": "^8.4",
         "laravel/framework": "^13.0",
         "livewire/livewire": "^4.0",
-        "yu-laravel/laravel-web-tools-core": "^1.0"
+        "yu-laravel/web-tools-core": "^1.0"
     },
     "autoload": {
         "psr-4": {
