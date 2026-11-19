@@ -1,0 +1,18 @@
+/*
+ * Security check: the certificate summary above the report.
+ * Uses the --wt-* variables of web-tools-core.css.
+ */
+
+.sc-cert { margin-top: 32px; padding: 26px 28px; border: 1px solid var(--wt-line); border-radius: 16px; background: var(--wt-surface); }
+.sc-cert h3 { margin: 0; font-size: 20px; font-weight: 600; }
+.sc-cert + .wt-report { margin-top: 20px; }
+.sc-facts { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px 24px; margin: 16px 0 0; }
+.sc-facts div { min-width: 0; }
+.sc-facts dt { font-size: 13px; color: var(--wt-muted); }
+.sc-facts dd { margin: 2px 0 0; font-weight: 600; color: var(--wt-text); overflow-wrap: anywhere; }
+.sc-facts small { display: block; font-weight: 400; color: var(--wt-text-2); }
+.sc-none { margin: 8px 0 0; color: var(--wt-err); }
+
+@media (max-width: 760px) {
+    .sc-cert { padding: 20px; }
+}
