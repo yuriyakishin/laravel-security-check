@@ -8,6 +8,8 @@
 
 A Livewire tool for Laravel that checks a site's SSL certificate, its HTTPS setup and its security headers. The visitor enters a URL and gets a scored checklist. Every problem comes with a ready-made nginx and Apache config snippet to fix it.
 
+![Security Check report](images/security-check.png)
+
 **🔗 Live example: [yu.net.ua/en/tools/security-check](https://yu.net.ua/en/tools/security-check)**
 
 ## What it checks
