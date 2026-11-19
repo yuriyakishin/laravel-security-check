@@ -33,10 +33,10 @@ The certificate is read even when browsers don't trust it, so the report can exp
 ## Installation
 
 ```bash
-composer require yu-laravel/security-check
+composer require yu-laravel/laravel-security-check
 ```
 
-This also installs [`yu-laravel/web-tools-core`](https://github.com/yuriyakishin/web-tools-core). Both service providers are discovered automatically.
+This also installs [`yu-laravel/laravel-web-tools-core`](https://github.com/yuriyakishin/laravel-web-tools-core). Both service providers are discovered automatically.
 
 ## Usage
 
@@ -49,11 +49,11 @@ Put the component on a page whose layout includes `@livewireStyles` and `@livewi
 Import the styles into your CSS build:
 
 ```css
-@import "../../vendor/yu-laravel/web-tools-core/resources/css/web-tools-core.css";
-@import "../../vendor/yu-laravel/security-check/resources/css/security-check.css";
+@import "../../vendor/yu-laravel/laravel-web-tools-core/resources/css/web-tools-core.css";
+@import "../../vendor/yu-laravel/laravel-security-check/resources/css/security-check.css";
 ```
 
-To match your site's colours and fonts, override the `--wt-*` variables (see [Web Tools Core](https://github.com/yuriyakishin/web-tools-core#styles)).
+To match your site's colours and fonts, override the `--wt-*` variables (see [Web Tools Core](https://github.com/yuriyakishin/laravel-web-tools-core#styles)).
 
 ## Configuration
 
@@ -62,11 +62,11 @@ To match your site's colours and fonts, override the `--wt-*` variables (see [We
 | `SECURITY_CHECK_ENABLED` | `true` | Turn the tool off without uninstalling it. |
 | `SECURITY_CHECK_PER_HOUR` | `10` | Checks per visitor IP per hour. |
 
-A report is cached for 2 minutes, so a server change shows up on the next check. Page fetching (timeouts, redirects, user agent) is set in [Web Tools Core](https://github.com/yuriyakishin/web-tools-core#configuration).
+A report is cached for 2 minutes, so a server change shows up on the next check. Page fetching (timeouts, redirects, user agent) is set in [Web Tools Core](https://github.com/yuriyakishin/laravel-web-tools-core#configuration).
 
 ## Events
 
-After every check the tool dispatches `Yu\WebToolsCore\Events\ToolCheckedEvent` with `tool = "security-check"` (see [Listening to checks](https://github.com/yuriyakishin/web-tools-core#listening-to-checks)).
+After every check the tool dispatches `Yu\WebToolsCore\Events\ToolCheckedEvent` with `tool = "security-check"` (see [Listening to checks](https://github.com/yuriyakishin/laravel-web-tools-core#listening-to-checks)).
 
 ## Languages
 
