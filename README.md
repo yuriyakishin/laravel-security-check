@@ -74,6 +74,14 @@ After every check the tool dispatches `Yu\WebToolsCore\Events\ToolCheckedEvent` 
 
 The TLS check sees only the version the server negotiates, so it can't tell whether old TLS 1.0 and 1.1 are still enabled.
 
+## Author
+
+Yuriy Akishin:
+- 🌐 Website: https://yu.net.ua
+- 📧 Email: yuriy.akishin@gmail.com
+- 💼 LinkedIn: https://www.linkedin.com/in/yuriyakishin/
+- 💻 GitHub: https://github.com/yuriyakishin
+
 ## License
 
 MIT. See [LICENSE](LICENSE).
