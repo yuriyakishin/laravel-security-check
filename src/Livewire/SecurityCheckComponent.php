@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Yu\SecurityCheck\Livewire;
 
 use Illuminate\Contracts\View\View;
+use Yu\SecurityCheck\Events\SecurityCheckEvent;
 use Yu\SecurityCheck\Services\SecurityAnalyzer;
 use Yu\WebToolsCore\Livewire\ToolComponent;
 use Yu\WebToolsCore\Locale\LocaleResolver;
@@ -17,6 +18,11 @@ class SecurityCheckComponent extends ToolComponent
     protected function name(): string
     {
         return 'security-check';
+    }
+
+    protected function event(): string
+    {
+        return SecurityCheckEvent::class;
     }
 
     protected function locales(): LocaleResolver

@@ -66,7 +66,8 @@ A report is cached for 2 minutes, so a server change shows up on the next check.
 
 ## Events
 
-After every check the tool dispatches `Yu\WebToolsCore\Events\ToolCheckedEvent` with `tool = "security-check"` (see [Listening to checks](https://github.com/yuriyakishin/laravel-web-tools-core#listening-to-checks)).
+- `Yu\SecurityCheck\Events\SecurityCheckEvent` fires after every finished check: successful, failed or from the cache. It carries `url`, `locale`, `report` (null on failure), `error` and `fromCache`. Listen to it to follow this tool only.
+- `Yu\WebToolsCore\Events\ToolCheckedEvent` fires next to it with `tool = "security-check"` and the same data, shared by all the web tools (see [Listening to checks](https://github.com/yuriyakishin/laravel-web-tools-core#listening-to-checks)).
 
 ## Languages
 
